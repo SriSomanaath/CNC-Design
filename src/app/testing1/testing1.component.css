@@ -1,0 +1,415 @@
+/*machine-summary-prototypes*/
+.machContainer .machine_body .nose4, .machContainer .machine_body .nose6, .machContainer .machine_body .nose5, .machContainer .machine_body .nose3, .machContainer .machine_body .nose2, .machContainer .machine_body .nose1, .machContainer .machine_body, .machContainer .hotplate,.machContainer .arm, .machContainer .arm1, .machContainer .chute, .machContainer .table, .machContainer .floor {
+    position: absolute;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
+  .machContainer {
+    width: 125px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+   
+  }
+  .machContainere {
+    width: 125px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    background: linear-gradient(to bottom, #b7cee3 0%, #b393ae 90%, #004a65 117%);
+  }
+  .machContainer .floor {
+    bottom: 0;
+    height: 10px;
+    width: 100%;
+    background: #333;
+  }
+  .machContainer .table {
+  width: 105px;
+  height: 42px;
+  background: linear-gradient(135deg, #727272 0%, #727272 15%, #9b9b9b 28%, #8e8e8e 30%, #7c7c7c 50%, #898989 51%, #dbdbdb 73%, #eaeaea 73%, #9b9b9b 100%);
+  bottom: -6px;
+  left: 10px;
+  }
+  .machContainer .table:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 10px;
+    width: 115px;
+    border: 6px solid #333;
+    border-top: 3px solid orange;
+    background: #333;
+    left: -6px;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+  }
+  .machContainer .table:after {
+    
+    position: absolute;
+    display: block;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    border-top: 10px solid #141414;
+    background: linear-gradient(135deg, #373737 0%, #373737 15%, #4b4b4b 28%, #454545 30%, #3c3c3c 50%, #424242 51%, #6a6a6a 73%, #727272 73%, #4b4b4b 100%);
+    box-shadow: inset 0 4px 3px rgba(0, 0, 0, 0.5);
+  }
+  .machContainer .name, .machContainer .heart {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: "Iceland", cursive;
+    font-size: 2em;
+    display: block;
+    bottom: 10px;
+    left: 30px;
+    text-shadow: 0 -1px 1px #ccc, 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #333;
+  }
+  .machContainer .heart {
+    bottom: 30px;
+    font-family: "Fugaz One", cursive;
+  }
+  .machContainer .chute {
+    bottom: 10px;
+    left: 600px;
+    width: 90px;
+    height: 75px;
+    background: linear-gradient(135deg, #373737 0%, #373737 15%, #4b4b4b 28%, #454545 30%, #3c3c3c 50%, #424242 51%, #6a6a6a 73%, #727272 73%, #4b4b4b 100%);
+  }
+  .machContainer .chute:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 10px;
+    width: 100%;
+    border: 6px solid #141414;
+    border-top: 3px solid orange;
+    background: #141414;
+    left: -6px;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+  }
+  .machContainer .chute:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    border-top: 5px solid #141414;
+    background: linear-gradient(135deg, #373737 0%, #373737 15%, #4b4b4b 28%, #454545 30%, #3c3c3c 50%, #424242 51%, #6a6a6a 73%, #727272 73%, #4b4b4b 100%);
+    box-shadow: inset 0 4px 3px rgba(0, 0, 0, 0.5);
+  }
+  .machContainer .chute .downtri {
+    position: absolute;
+    top: 70px;
+    left: 90px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 20px solid red;
+    animation-name: flash_ani;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  .machContainer .chute{
+    font-family: "Iceland", cursive;
+    text-shadow: 0 -1px 1px white, 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #999;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
+  .machContainer .arm, .machContainer .arm1 {
+    width: 87px;
+  top: 21px;
+  height: 8px;
+  background: #666;
+  right: 0;
+  z-index: 0;
+  margin-right: 0px;
+  }
+  .machContainer .arm1 {
+    top: 30px;
+  height: 5px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #727272 0%, #727272 15%, #9b9b9b 28%, #8e8e8e 30%, #7c7c7c 50%, #898989 51%, #dbdbdb 73%, #eaeaea 73%, #9b9b9b 100%);
+  }
+  .machContainer .cap{
+  position: absolute;
+  width: 4px;
+  height: 18px;
+  left: 39px;
+  top: 18px;
+  background: linear-gradient(to top, #373737 0%, #373737 15%, #4b4b4b 28%, #454545 30%, #3c3c3c 50%, #424242 51%, #6a6a6a 73%, #727272 73%, #4b4b4b 100%);
+  border-right: 2px solid #666;
+  border-left: 2px solid #333;
+  }
+  .machContainer .cap2 {
+    top: 118px;
+    height: 15px;
+  }
+  .machContainer .hotplate {
+    top: 20px;
+  left: 36px;
+  width: 62px;
+  height: 18px;
+  background: #333;
+  border-radius: 5px;
+  }
+  
+  .machContainer .machine_body {
+  top: 13px;
+  left: 18px;
+  width: 21px;
+  height: 38px;
+    background: linear-gradient(to right, #727272 0%, #727272 15%, #9b9b9b 28%, #8e8e8e 30%, #7c7c7c 50%, #898989 51%, #dbdbdb 73%, #eaeaea 73%, #9b9b9b 100%);
+  }
+  .machContainer .machine_body{
+    font-family: "Iceland", cursive;
+    text-shadow: 0 -1px 1px #ccc, 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #333;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 28px;
+  }
+  .machContainer .machine_body .nose1 {
+    width: 23px;
+  height: 6px;
+  top: 38px;
+  left: -1px;
+    background: linear-gradient(to right, #373737 0%, #373737 15%, #4b4b4b 28%, #454545 30%, #3c3c3c 50%, #424242 51%, #6a6a6a 73%, #727272 73%, #4b4b4b 100%);
+  }
+  .machContainer .machine_body .nose2 {
+    width: 15px;
+  height: 6px;
+  top: -6px;
+  left: 3px;
+    background: linear-gradient(to right, #373737 0%, #373737 15%, #4b4b4b 28%, #454545 30%, #3c3c3c 50%, #424242 51%, #6a6a6a 73%, #727272 73%, #4b4b4b 100%);
+  }
+  .machContainer .machine_body .nose3 {
+    width: 23px;
+  height: 5px;
+  top: -11px;
+  margin-left: -1px;
+    background: linear-gradient(to right, #727272 0%, #727272 15%, #9b9b9b 28%, #8e8e8e 30%, #7c7c7c 50%, #898989 51%, #dbdbdb 73%, #eaeaea 73%, #9b9b9b 100%);
+  }
+  .machContainer .machine_body .nose4, .machContainer .machine_body .nose6, .machContainer .machine_body .nose5 {
+    width: 16px;
+  height: 4px;
+  top: 48px;
+  border-radius: 10px;
+  left: 2.5px;
+    background: #666;
+    box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.9);
+  }
+  .machContainer .machine_body .nose5 {
+    top: 44px;
+  width: 19px;
+  left: 1px;
+  }
+  .machContainer .machine_body .nose6 {
+  top: 52px;
+  width: 14px;
+  left: 3.5px;
+  }
+  .welding-sparks {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .welding-sparks:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 1.6px;
+    height: 4px; 
+    background-color:red;
+    animation: spark 0.2s ease-in-out infinite;
+  }
+  
+  .welding-sparks:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 2.5px;
+    width: 1.6px;
+    height: 4px;
+    background-color: #FF5903;
+    animation: spark 0.2s ease-in-out infinite;
+  }
+  
+  @keyframes spark {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 3;
+    }
+    70% {
+      transform: translateY(10px) rotate(30deg);
+      opacity: 1;
+    }
+    70% {
+      transform: translateY(18px) rotate(60deg);
+      opacity: 1;
+    }
+    70% {
+      transform: translateY(20px) rotate(90deg);
+      opacity: 1;
+    }
+    70% {
+      transform: translateY(27px) rotate(310deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(30px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  .rectangle {
+    position:absolute;
+    top:94px;
+    width: 30px;
+    height: 4px;
+    background-color: #F57C34;
+    position: relative;
+    left: 23px;
+    animation: slide 2s infinite;
+  }
+  
+@keyframes slide {
+    0% {
+      transform: translateX(-4px);
+    }
+    50% {
+      transform: translateX(16px);
+    }
+    100% {
+      transform: translateX(-4px);
+    }
+  }
+  .glowing-line {
+  position: absolute;
+  top: 55.4px;
+  width: 2px;
+  height: 27px;
+  left: 9.15px;
+  background-color: #EBEDF3;
+  border: 2px solid #f00;
+  box-shadow: 0px 0 4px #f00;
+  animation: glowing 1s infinite;
+  border-radius: 1px;
+  }
+  
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 5px #f00;
+    }
+    50% {
+      box-shadow: 0 0 15px #f00;
+    }
+    100% {
+      box-shadow: 0 0 5px #f00;
+    }
+  }
+  
+  .trafficlight{
+    display: flex;
+    background: #222;
+    background-image: linear-gradient(transparent 21%, #111 2%, transparent 3%, #111 30%);
+    width: 58px;
+  height: 15px;
+  border-radius: 25px;
+  position: relative;
+  border: solid 1px #4B729A;
+  margin: 4px;
+  top: -3.1px;
+  left: -2px;
+  }
+  
+  .red_summary{
+    background: red;
+    background-image: radial-gradient(brown, transparent);
+    background-size: 5px 5px; 
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    position: absolute;
+    top: 2.5px;
+    left: 7.5px;
+    animation: 0s red infinite;
+    border: dotted 2px red;
+    box-shadow: 
+      0 0 2px #111 inset,
+      0 0 150px red;
+  }
+  
+  .yellow_summary{
+    background: yellow;
+    background-image: radial-gradient(orange, transparent);
+    background-size: 5px 5px;
+     width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    border: dotted 2px yellow;
+    position: absolute;
+    top: 2.5px;
+    left: 26px;
+    animation-play-state: paused;
+    animation: 0s yellow infinite;
+    box-shadow: 
+      0 0 2px #111 inset,
+      0 0 150px yellow;
+  }
+  .green_summary{
+    background: green;
+    background-image: radial-gradient(lime, transparent);
+    background-size: 5px 5px;
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    border: dotted 2px lime;
+    position: absolute;
+    top: 2.5px;
+    left: 45.5px;
+    box-shadow: 
+      0 0 2px #111 inset,
+      0 0 150px lime;
+    animation-play-state: paused;
+    animation: 0s green infinite;
+  }
+  
+  @keyframes red_summary{
+    0%{opacity: 1}
+    20%{opacity: 1}
+    40%{opacity: 1}
+    60%{opacity: .1}
+    80%{opacity: .1}
+    100%{opacity: .1}
+  }
+  
+  @keyframes yellow_summary{
+    0%{opacity: .1}
+    20%{opacity: .1}
+    40%{opacity: 1}
+    50%{opacity: .1}
+    60%{opacity: .1}
+    80%{opacity: .1}
+    86%{opacity: 1}
+    100%{opacity: 1}
+  }
+  
+  @keyframes green_summary{
+    0%{opacity: .1}
+    40%{opacity: .1}
+    60%{opacity: 1}
+    80%{opacity: 1}
+    83%{opacity: .1}
+    100%{opacity: .1}
+  }
