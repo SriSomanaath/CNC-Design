@@ -1,14 +1,14 @@
-<div [id]="'noMachine'+i" class="batteryCard" style="display: flex; flex-direction: column; padding: 5px">
-      <div  style ="border-radius:5px" class = 'machContainer' [id] = "'workbench'+i" style=" background: linear-gradient(to bottom, #b7cee3 0%, #b393ae 90%, #004a65 117%);">
-        <div>
-          <h5 class="expnId sample1" style="cursor: pointer" (click)="scrollToId(item.machineId)">{{item.machineId}}</h5>
-        </div>
-        <div [id] = "'workpiece'+i" class="rectangle"></div>
+<div id="noMachine" class="batteryCard" style="display: flex; flex-direction: column; padding: 5px">
+      <div  style ="border-radius:5px" class = 'machContainer' id = "workbench" style=" background: linear-gradient(to bottom, #b7cee3 0%, #b393ae 90%, #004a65 117%);">
+        <!-- <div></div> -->
+          <!-- <h5 class="expnId sample1" style="cursor: pointer" (click)="scrollToId(item.machineId)">{{item.machineId}}</h5> -->
+        
+        <div id = "workpiece" class="rectangle"></div>
           <div style ="border-radius:5px" class="floor"></div>
          
           <div class="table">
             <div class="hotplate">
-              <div [id] = "'machLights_summary'+i"></div>
+              <div id = "machLights_summary"></div>
             </div>
           </div>
           <div class="arm"></div>
@@ -22,8 +22,7 @@
             <div class="nose4"></div>
             <div class="nose5"></div>
             <div class="nose6"></div>
-            <div [id]= "'laser' + i" class="glowing-line"></div>
+            <div id= "laser" class="glowing-line"></div>
             </div>
           </div>
         </div>
-  </div>
